@@ -125,6 +125,33 @@ proxy-groups:
     proxies: [Default, Auto, DIRECT]
     use: [LongLight]
     icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Emby.png
+  - name: us-auto
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: (?i)美|us|unitedstates|united states
+    tolerance: 20
+    interval: 300
+    proxies: []
+    use: [LongLight]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/United_States.png
+  - name: japan-auto
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: (?i)日|jp|japan
+    tolerance: 20
+    interval: 300
+    proxies: []
+    use: [LongLight]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Japan.png
+  - name: tw-auto
+    type: url-test
+    url: https://www.gstatic.com/generate_204
+    filter: (?i)台|tw|taiwan
+    tolerance: 20
+    interval: 300
+    proxies: []
+    use: [LongLight]
+    icon: https://raw.githubusercontent.com/Koolson/Qure/refs/heads/master/IconSet/Color/Korea.png
 
 rule-providers:
   cnip:
